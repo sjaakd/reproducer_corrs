@@ -1,8 +1,8 @@
-#Reproducer 
+# Reproducer
 
 call: `http://localhost:8080/reproducer/q/openapi.json`
 
-###including properties:
+### including properties:
 
 ```
 quarkus.http.cors=true
@@ -14,7 +14,7 @@ Results in response headers:
 
 ![img.png](img.png)
 
-### excluding the properties (and restarting)
+### excluding the properties (and restarting):
 
 ```
 #quarkus.http.cors=true
@@ -26,7 +26,7 @@ Results in:
 ![img_1.png](img_1.png)
 
 
-###please note
+### please note:
 
 * The API-Version header has gone missing
 * The CORS headers are suddenly included.
